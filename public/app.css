@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+.offWhiteBG{
+  background-color: var(--off-white-color);
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
@@ -71,6 +75,22 @@ body {
   
 }
 
+
+.requirements-item h2{
+  font-size: 2rem;
+  color: var(--off-white-color);
+}
+
+.requirements-item p{
+  font-size: 1.5rem;
+  /* padding: 1rem; */
+  min-height: 40%;
+  padding-top: 10px;
+  width: 100%;
+  background-color: var(--off-white-color);
+}
+
+
 h2{
   font-size: 4rem;
   margin: 30px 0px;
@@ -83,18 +103,6 @@ h1{
   line-height: 300px;
   font-weight: 100;
   text-shadow: 2px 2px 3px var(--off-white-color);
-}
-
-.requirements-item h2{
-  font-size: 2rem;
-  color: var(--off-white-color);
-}
-
-.requirements-item p{
-  font-size: 1.5rem;
-  /* padding: 1rem; */
-  width: 100%;
-  background-color: var(--off-white-color);
 }
 
 #downArrow{
@@ -125,11 +133,19 @@ p {
 
 form{
   margin-top: 100px;
-  background-color: var(--off-white-color);
+  padding-top: 100px;
+  /* background-color: var(--off-white-color); */
 }
 
-#signUp{
+#requirements{
   
+}
+
+#formContainer{
+  background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(http://i.imgur.com/BJP2Q1j.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .form {
@@ -246,6 +262,20 @@ input[type=text]:focus {
 
 #joinBtn{
   margin-bottom: 120px;
+}
+
+#theme{
+  height: 100vh;
+  background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fperfectionpending.net%2Fwp-content%2Fuploads%2F2018%2F01%2FDepositphotos_2484945_l-2015.jpg&f=1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.scoringList{
+  text-align: left;
+  font-size: 1.4rem;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

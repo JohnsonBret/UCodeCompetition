@@ -37,6 +37,15 @@ app.get("/signups", (req, res)=>{
 
 });
 
+app.get("/emails", async (req, res)=>{
+    const competitors = await Competition.find({});
+
+    let emails = _.pick(competitors, ['email']);
+
+    res.status(200).send({emails});
+
+});
+
 app.get("/count", (req, res) =>{
     
 });
