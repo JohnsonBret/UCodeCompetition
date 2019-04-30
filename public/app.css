@@ -1,10 +1,20 @@
+:root {
+  --black-color: #000;
+  --off-black-color: #222;
+  --white-color: rgb(255,255,255);
+  --off-white-color:#e9e8ea;
+  --blue-color:#191f6c;
+  --orange-color:#ff6b00;
+  --yellow-color:#fed106;
+
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-    color: rgb(66,69,86);
-    background-image: url('http://i.imgur.com/BJP2Q1j.jpg');
-    background-size: cover;
+    color: var(--blue-color);
     font-weight: 100;
     margin: 0;
 }
@@ -52,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(66,69,86);
+  background-color: var(--blue-color);
   width: 30%;
   transition: transform 250ms;
 }
@@ -72,34 +82,36 @@ h1{
   font-size: 12rem;
   line-height: 300px;
   font-weight: 100;
-  text-shadow: 2px 2px 3px #ebebeb;
+  text-shadow: 2px 2px 3px var(--off-white-color);
 }
 
 .requirements-item h2{
   font-size: 2rem;
-  color: #ebebeb;
+  color: var(--off-white-color);
 }
 
 .requirements-item p{
   font-size: 1.5rem;
-  padding: 1rem;
-  color: #ebebeb;
+  /* padding: 1rem; */
+  width: 100%;
+  background-color: var(--off-white-color);
 }
 
 #downArrow{
-  color: rgb(66,69,86);
+
+  color: var(--blue-color);
   padding: 1rem;
   transition: color 400ms, background-color 300ms, border-radius 600ms;
 }
 
 #downArrow:hover{
-  color: #ebebeb;
-  background-color: rgb(66,69,86);
+  color: var(--off-white-color);
+  background-color: var(--blue-color);
   border-radius: 20%;
 }
 
 i{
-  color: #ebebeb;
+  color: var(--off-white-color);
   font-size: 5rem;
   margin: 1rem;
 }
@@ -113,23 +125,28 @@ p {
 
 form{
   margin-top: 100px;
+  background-color: var(--off-white-color);
+}
+
+#signUp{
+  
 }
 
 .form {
 	line-height: 1.5;
 	border: none;
-	border-bottom: 3px solid #ebebeb;
+	border-bottom: 3px solid var(--blue-color);
 	width: 700px;
 	font-size: 2.9em;
-	color: white;
+  color: var(--blue-color);
 	padding: 5px 10px;
   background: transparent;
   margin-bottom: 50px;
 }
 
 .scheduleLabel{
-  background-color: var(--blue-color);
-  color: #ecf6f8;
+  background-color: var(--off-white-color);
+  color: var(--blue-color);
   padding: 16px;
   margin-right: 20px;
   font-size: 2.9em;
@@ -142,8 +159,8 @@ form{
 
 #registrationMsg{
   visibility: hidden;
-  background-color: #ecf6f8;
-  color: rgb(66,69,86);
+  background-color: var(--off-white-color);
+  color: var(--blue-color);
   font-size: 2.9em;
   margin: 1rem;
 }
@@ -161,14 +178,14 @@ form{
 .dropdown {
   position: relative;
   display: inline-block;
-  border-bottom: 2px solid #ecf6f8;
-  border-left: 2px solid #ecf6f8;
+  border-bottom: 2px solid var(--off-white-color);
+  border-left: 2px solid var(--off-white-color);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ecf6f8;
+  background-color:  var(--blue-color);
   min-width: 120px;
   font-size: 1.9em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -176,14 +193,14 @@ form{
 }
 
 .dropdown-content a {
-  color: var(--blue-color);
+  color: var(--white-color);
   padding: 6px 8px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ecf6f8;
+  color: var(--orange-color);
   cursor: pointer;
 }
 
@@ -198,7 +215,7 @@ form{
 
 .dropdown:hover .dropbtn {
   background-color: rgba(255,255,255,1.0);
-color: var(--blue-color);
+  color: var(--blue-color);
 }
 #scheduleMessage{
   display: flex;
@@ -210,11 +227,11 @@ button {
     line-height: 2.0;
     border:3px solid white;
     font-size: 1.9em;
-    color: rgb(66,69,86);
+    color: var(--white-color);
     padding: 5px 30px;
-    background: rgba(255,255,255,1.0);
+    background-color: var(--blue-color);
     border-radius: 5px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 input[type=text]:focus {
