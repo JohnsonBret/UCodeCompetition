@@ -84,7 +84,7 @@ body {
 .requirements-item p{
   font-size: 1.5rem;
   /* padding: 1rem; */
-  min-height: 40%;
+  min-height: 100px;
   padding-top: 10px;
   width: 100%;
   background-color: var(--off-white-color);
