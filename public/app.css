@@ -90,6 +90,10 @@ body {
   background-color: var(--off-white-color);
 }
 
+#mixer{
+  margin-top: 20px;
+}
+
 
 h2{
   font-size: 4rem;
