@@ -1,0 +1,75 @@
+:root {
+    --black-color: #000;
+    --off-black-color: #222;
+    --white-color: rgb(255,255,255);
+    --off-white-color:#e9e8ea;
+    --blue-color:#191f6c;
+    --orange-color:#ff6b00;
+    --yellow-color:#fed106;
+  
+  
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      /* text-shadow: 0 .05rem .1rem rgba(0,0,0,.5); */
+      color: var(--blue-color);
+      font-weight: 100;
+      margin: 0;
+  }
+  
+  .offWhiteBG{
+    background-color: var(--off-white-color);
+  }
+  
+  
+  .flexRow{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    margin: 30px 0px;
+    
+  }
+  
+  h1{
+    margin: 0;
+    font-size: 2rem;
+    /* line-height: 300px;
+    font-weight: 100; */
+    /* text-shadow: 2px 2px 3px var(--off-white-color); */
+  }
+
+  
+  i{
+    color: var(--off-white-color);
+    font-size: 5rem;
+    margin: 1rem;
+  }
+  
+  
+  
+  p {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  form{
+    margin-top: 100px;
+    padding-top: 100px;
+    /* background-color: var(--off-white-color); */
+  }
+  
+  
+  .scoringList{
+    text-align: left;
+    font-size: 1rem;
+    list-style-type: square;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,0.8);
+  }
