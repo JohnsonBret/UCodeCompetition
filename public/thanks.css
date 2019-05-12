@@ -1,0 +1,204 @@
+:root {
+    --black-color: #000;
+    --off-black-color: #222;
+    --white-color: rgb(255,255,255);
+    --off-white-color:#e9e8ea;
+    --blue-color:#191f6c;
+    --orange-color:#ff6b00;
+    --yellow-color:#fed106;
+  
+  
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+      color: var(--blue-color);
+      font-weight: 100;
+      margin: 0;
+  }
+  
+  .offWhiteBG{
+    background-color: var(--off-white-color);
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .flexRow{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ucodeBgContainer{
+    height: 100vh;
+    background-image: url("u.png");
+    background-size: 55vw auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  
+  .container{
+    height: 100vh;
+  }
+  .halfContainer{
+      height: 50vh;
+  }
+
+  .threeQuarterContainer{
+    height: 75vh;
+  }
+
+  .opaqueBG{
+    background-color: rgba(255,255,255,0.75);
+  }
+  
+  .container h1, .container h2,.container p{
+    text-shadow: -1px -1px 0px #ebebeb, 1px -1px 0px #ebebeb, -1px 1px 0px #ebebeb, 1px 1px 0px #ebebeb;
+  }
+
+  .rightAlign{
+      text-align: right;
+  }
+  
+  #topQuestion{
+    margin-top: 0;
+  }
+  
+  .winners-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .winners-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-color);
+    width: 30%;
+    transition: transform 250ms;
+    padding: 10px;
+  }
+  .winners-item:hover{
+    transform: scale(1.03);
+    
+  }
+
+  .winName{
+      margin-top: 10px;
+  }
+
+  .winImg{
+     border-radius: 5px;
+     margin-top: 10px;
+  }
+  
+  
+  .winners-item h2{
+    font-size: 2rem;
+    color: var(--off-white-color);
+    margin: 10px
+  }
+  
+  .winners-item p{
+    font-size: 1.5rem;
+    /* padding: 1rem; */
+    min-height: 70px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: var(--off-white-color);
+  }
+  
+  #mixer{
+    margin-top: 20px;
+  }
+  
+  
+  h2{
+    font-size: 4rem;
+    margin: 30px 0px;
+    
+  }
+  
+  h1{
+    margin: 0;
+    font-size: 9rem;
+    line-height: 300px;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px var(--off-white-color);
+  }
+  
+  #downArrow{
+  
+    color: var(--blue-color);
+    padding: 1rem;
+    transition: color 400ms, background-color 300ms, border-radius 600ms;
+  }
+  
+
+  
+  i{
+    color: var(--off-white-color);
+    font-size: 5rem;
+    margin: 1rem;
+  }
+  
+  
+  
+  p {
+    margin: 0;
+    font-size: 50px;
+  }
+
+  
+  #winners{
+    
+  }
+
+  .groupBG{
+    background-image: url('/images/Competitors.jpg');
+    background-position: 0% 40%;
+    background-size: cover;
+  }
+  
+  #theme{
+    height: 100vh;
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fperfectionpending.net%2Fwp-content%2Fuploads%2F2018%2F01%2FDepositphotos_2484945_l-2015.jpg&f=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  
+#parents{
+    background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/images/ParentsBG.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* color: rgb(255,255,255); */
+}
+
+.janaBG{
+    background-image: url('/images/jana.jpg');
+    background-repeat: cover;
+}
+
+.sullyBG{
+    background-image: url('/images/sully.jpg');
+    background-repeat: cover;
+}
+
+
+
+.quoteMargin{
+    margin-right: 100px;
+}
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255,255,255,0.8);
+  }
