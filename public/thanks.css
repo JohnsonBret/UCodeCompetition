@@ -185,12 +185,12 @@
 
 .janaBG{
     background-image: url('/images/jana.jpg');
-    background-repeat: cover;
+    background-size: cover;
 }
 
 .sullyBG{
     background-image: url('/images/sully.jpg');
-    background-repeat: cover;
+    background-size: cover;
 }
 
 
