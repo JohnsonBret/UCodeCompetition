@@ -11,7 +11,7 @@ const pageScroll = () => {
         window.scrollBy(0,1);
     }
 
-    scrolldelay = setTimeout(pageScroll,50);
+    scrolldelay = setTimeout(pageScroll,30);
 }
 
 let scrollHeight = Math.max(
