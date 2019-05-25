@@ -37,6 +37,10 @@ app.get("/signups", (req, res)=>{
 
 });
 
+app.get("/beginner", (req, res)=>{
+    res.status(200).render("beginner", {});
+});
+
 app.get("/thanks", (req, res)=>{
     res.status(200).render("thanks", {});
 });

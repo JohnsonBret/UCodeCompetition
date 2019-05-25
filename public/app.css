@@ -270,10 +270,14 @@ input[type=text]:focus {
 
 #theme{
   height: 100vh;
-  background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fperfectionpending.net%2Fwp-content%2Fuploads%2F2018%2F01%2FDepositphotos_2484945_l-2015.jpg&f=1);
+  background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wallpapersafari.com%2F48%2F55%2FtSpOuz.jpg&f=1);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+#theme i{
+  color: var(--blue-color);
 }
 
 
