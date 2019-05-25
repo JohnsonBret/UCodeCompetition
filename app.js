@@ -38,7 +38,14 @@ app.get("/signups", (req, res)=>{
 });
 
 app.get("/beginner", (req, res)=>{
-    res.status(200).render("beginner", {});
+
+     Competition.find().then((competitors)=>{
+        // console.log("Length of Candidates "+ candidates.length)
+        count = competitors.length;
+
+        res.status(200).render("beginner", {count: count});
+    })
+    
 });
 
 app.get("/thanks", (req, res)=>{
