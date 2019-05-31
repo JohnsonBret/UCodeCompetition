@@ -65,6 +65,20 @@ app.get("/count", (req, res) =>{
     
 });
 
+app.get("/votes", async (req, res)=>{
+    
+    try{
+    let fortniteVotes =  await Competition.find({vote: "fortnite"}).count();
+    let minecraftVotes =  await Competition.find({vote: "minecraft"}).count();
+    let animalVotes =  await Competition.find({vote: "animals"}).count();
+    
+    res.status(200).send({fortniteVotes, minecraftVotes, animalVotes});
+
+    }catch{
+        res.status(400).send({errorMsg: e});
+    }
+});
+
 app.post("/register", function(req, res){
     var body = _.pick(req.body, ['email', 'name','tier', 'location', 'vote']);
 

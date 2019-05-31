@@ -280,6 +280,17 @@ input[type=text]:focus {
   color: var(--blue-color);
 }
 
+#voteCount{
+  margin-top: 40px;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas{
+  width: 100vw;
+  height: 80vh;
+}
+
 
 .scoringList{
   text-align: left;
