@@ -7,6 +7,15 @@ function changeLocation(event)
     location.innerHTML = event.target.innerHTML;
 }
 
+function changeVote(event)
+{
+    var clickedVote = event.target.parentElement.getAttribute("id");
+
+    var vote = document.getElementById("displayVote");
+    vote.value = event.target.getAttribute("value");
+    vote.innerHTML = event.target.innerHTML;
+}
+
 function changeLevel(event)
 {
     var clickedLevel = event.target.parentElement.getAttribute("id");
@@ -24,8 +33,9 @@ const postRegistration = async ()=>{
     var email = document.getElementById("studentEmail").value;
     var tier = document.getElementById("competitionLevel").value;
     var location = document.getElementById("displayLocation").value;
+    var vote = document.getElementById("displayVote").value;
 
-    console.log(`Post Registration Name ${name} Email ${email} Location ${location}`);
+    console.log(`Post Registration Name ${name} Email ${email} Location ${location} vote${vote}`);
 
     const rawResponse = await fetch('/register', {
         method: 'POST',
@@ -33,7 +43,7 @@ const postRegistration = async ()=>{
         'Accept': 'application/json',
         'Content-Type': 'application/json',
         },
-        body: JSON.stringify({email: email, name: name, tier: tier, location: location})
+        body: JSON.stringify({email: email, name: name, tier: tier, location: location, vote: vote})
     });
         const content = await rawResponse.json()
         //const content = await rawResponse;

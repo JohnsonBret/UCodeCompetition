@@ -66,7 +66,7 @@ app.get("/count", (req, res) =>{
 });
 
 app.post("/register", function(req, res){
-    var body = _.pick(req.body, ['email', 'name','tier', 'location']);
+    var body = _.pick(req.body, ['email', 'name','tier', 'location', 'vote']);
 
     console.log(JSON.stringify(body, undefined,2));
 
@@ -78,7 +78,8 @@ app.post("/register", function(req, res){
             name: body.name,
             email: body.email,
             tier: body.tier,
-            location: body.location
+            location: body.location,
+            vote: body.vote
         });
     }).catch((e)=>{
         res.status(400).send({errorMsg: e});
