@@ -5,7 +5,10 @@ var hbs = require('hbs');
 var bodyParser  = require("body-parser");
 var {mongoose} = require('./db/mongoose');
 var {Competition} = require('./models/competition');
+var {Student} = require('./models/student');
 const _ = require('lodash');
+const students = require("./students");
+
 
 var app = express();
 
@@ -79,25 +82,47 @@ app.get("/votes", async (req, res)=>{
     }
 });
 
-app.post("/register", function(req, res){
+app.post("/register", async function(req, res){
     var body = _.pick(req.body, ['email', 'name','tier', 'location', 'vote']);
 
-    console.log(JSON.stringify(body, undefined,2));
+    // console.log(JSON.stringify(body, undefined,2));
 
     var competitor = new Competition(body);
 
-    competitor.save().then(()=>{
-        res.status(200).send({
-            status: "successfully created competitor",
-            name: body.name,
-            email: body.email,
-            tier: body.tier,
-            location: body.location,
-            vote: body.vote
-        });
-    }).catch((e)=>{
+    try{
+        let foundStudent = await Student.find({name: body.name});
+
+        // console.log(`Found student ${foundStudent}`);
+
+        if(foundStudent != "")
+        {
+            await competitor.save();
+
+            res.status(200).send({
+                status: "successfully created competitor",
+                name: body.name,
+                email: body.email,
+                tier: body.tier,
+                location: body.location,
+                vote: body.vote
+            });
+        }
+        else{
+            res.status(400).send({errorMsg: `No student found with name ${body.name}`});
+        }
+        
+    }
+    catch(e){
         res.status(400).send({errorMsg: e});
-    });
+    }
+   
+
+});
+
+app.get('/insertStudents', (req, res)=>{
+    students.insertStudents();
+
+    res.status(200).send("Did this work?");
 });
 
 
