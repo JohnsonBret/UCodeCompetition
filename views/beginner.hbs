@@ -224,7 +224,7 @@
     <section id="voteCount" class="flex-container align-items">
         <h1>VOTE COUNT</h1>
         <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart" width="600px" height="600px"></canvas>
         </div>
         <script>
         
@@ -280,12 +280,21 @@
                                 beginAtZero: true
                             }
                         }]
+                    },
+                    layout: {
+                        padding: {
+                            left: 50,
+                            right: 50,
+                            top: 0,
+                            bottom: 0
+                        }
                     }
                 }
             });
             myChart.canvas.parentNode.style.height = '600px';
             myChart.canvas.parentNode.style.width = '600px';
-
+            myChart.canvas.parentNode.style.margin = '0px auto';
+            
         }
 
        makeChart();
