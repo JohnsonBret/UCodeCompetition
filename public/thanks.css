@@ -166,14 +166,14 @@
   }
 
   .groupBG{
-    background-image: url('/images/Competitors.jpg');
+    background-image: url('/images/Competitors_2.jpg');
     background-position: 0% 40%;
     background-size: cover;
   }
   
   #theme{
     height: 100vh;
-    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fperfectionpending.net%2Fwp-content%2Fuploads%2F2018%2F01%2FDepositphotos_2484945_l-2015.jpg&f=1);
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(http://oi49.tinypic.com/2u93cr8.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -181,19 +181,19 @@
   
   
 #parents{
-    background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/images/ParentsBG.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/images/ParentsBG_2.jpg');
     background-size: cover;
     background-attachment: fixed;
     /* color: rgb(255,255,255); */
 }
 
 .janaBG{
-    background-image: url('/images/jana.jpg');
+    background-image: url('/images/Tristin.jpg');
     background-size: cover;
 }
 
 .sullyBG{
-    background-image: url('/images/sully.jpg');
+    background-image: url('/images/Vasco.jpg');
     background-size: cover;
 }
 

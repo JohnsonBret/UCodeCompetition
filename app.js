@@ -55,6 +55,10 @@ app.get("/thanks", (req, res)=>{
     res.status(200).render("thanks", {});
 });
 
+app.get("/thanksbeginner", (req, res)=>{
+    res.status(200).render("thanksbeginner", {});
+});
+
 app.get("/emails", async (req, res)=>{
     const competitors = await Competition.find({});
 
