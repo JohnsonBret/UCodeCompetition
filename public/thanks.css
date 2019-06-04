@@ -181,7 +181,7 @@
   
   
 #parents{
-    background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('/images/ParentsBG_2.jpg');
+    background-image:linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url('/images/ParentsBG_2.jpg');
     background-size: cover;
     background-attachment: fixed;
     /* color: rgb(255,255,255); */
